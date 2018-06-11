@@ -5,6 +5,14 @@
       "prefix": "!",
       "debug": true
   },
+  "caz": {
+    "paytxfee": .00001,
+    "config": {
+      "port": 3334,
+      "user": "username",
+      "pass": "Do-Not-Use-This-Password-Youll-Be-Hacked-For-all-Teh-Moneys!"
+    }
+  },
   "rvn": {
     "paytxfee": .01,
     "config": {

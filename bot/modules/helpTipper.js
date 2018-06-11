@@ -7,6 +7,7 @@ let protonFee = config.get('proton').paytxfee;
 let ufoFee = config.get('ufo').paytxfee;
 let phoenixFee = config.get('pxc').paytxfee;
 let featherFee = config.get('ftc').paytxfee;
+let cazFee = config.get('caz').paytxfee;
 exports.commands = ['tiphelp'];
 exports.tiphelp = {
   usage: '<subcommand>',
@@ -32,6 +33,9 @@ exports.tiphelp = {
     );
     message.author.send(
       '__**Feathercoin (FTC) Tipper**__\nTransaction Fees: **' + featherFee + '**\n    **!tipftc balance** : get your balance\n    **!tipftc deposit** : get address for your deposits\n    **!tipufo withdraw <ADDRESS> <AMOUNT>** : withdraw coins to specified address\n    **!tipftc <@user> <amount>** :mention a user with @ and then the amount to tip them\n    **!tipftc private <user> <amount>** : put private before Mentioning a user to tip them privately.\n\n    **<> : Replace with appropriate value.**'
+    );
+    message.author.send(
+      '__**Cazcoin (CAZ) Tipper**__\nTransaction Fees: **' + cazFee + '**\n    **!tipcaz balance** : get your balance\n    **!tipcaz deposit** : get address for your deposits\n    **!tipcaz withdraw <ADDRESS> <AMOUNT>** : withdraw coins to specified address\n    **!tipcaz <@user> <amount>** :mention a user with @ and then the amount to tip them\n    **!tipcaz private <user> <amount>** : put private before Mentioning a user to tip them privately.\n\n    **<> : Replace with appropriate value.**'
     );
   }
 };
